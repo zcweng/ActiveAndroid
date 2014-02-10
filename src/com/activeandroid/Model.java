@@ -220,7 +220,7 @@ public abstract class Model {
 				else if (fieldType.equals(Character.class) || fieldType.equals(char.class)) {
 					value = cursor.getString(columnIndex).charAt(0);
 				}
-				else if (fieldType.equals(String.class)) {
+				else if (fieldType.equals(String.class) || fieldType.equals(CharSequence.class)) {
 					value = cursor.getString(columnIndex);
 				}
 				else if (fieldType.equals(Byte[].class) || fieldType.equals(byte[].class)) {
