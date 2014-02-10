@@ -125,7 +125,7 @@ public abstract class Model {
 				else if (fieldType.equals(Character.class) || fieldType.equals(char.class)) {
 					values.put(fieldName, value.toString());
 				}
-				else if (fieldType.equals(String.class)) {
+				else if (fieldType.equals(String.class) || fieldType.equals(CharSequence.class)) {
 					values.put(fieldName, value.toString());
 				}
 				else if (fieldType.equals(Byte[].class) || fieldType.equals(byte[].class)) {
